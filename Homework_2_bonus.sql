@@ -7,3 +7,5 @@ group by campaign_id
 having sum(spend) > 500000
 order by Romi desc
 limit 1
+
+/* The task was to find highest ROMI within campaigns having total spend more than 500 000 */

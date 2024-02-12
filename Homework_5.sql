@@ -1,3 +1,19 @@
+/*
+In the CTE query, combine data from the above tables to obtain:
+
+ad_date: the date of displaying ads on Google and Facebook;
+url_parameters: the part of the campaign's URL containing UTM parameters;
+spend, impressions, reach, clicks, leads, value: campaign and ad metrics on specific days. If a table lacks values for any of these metrics (i.e., the value is NULL), set the value to zero.
+
+Based on the results obtained using CTE, retrieve the following data:
+
+ad_date: the date of the ad;
+utm_campaign: the value of the utm_campaign parameter from the utm_parameters field, meeting the following conditions:
+All letters are lowercase.
+If the value of utm_campaign in utm_parameters is equal to 'nan', it should be null in the result table.
+
+*/
+
 WITH CTE_1 
 AS
 ( 

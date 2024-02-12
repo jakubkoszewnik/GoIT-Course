@@ -1,3 +1,14 @@
+/*
+Use the CTE from the previous homework task in a new (second) CTE to create a sample with the following data:
+
+ad_month: the first day of the month of the ad date (obtained from ad_date);
+utm_campaign, total_cost, impressions, clicks, conversion_value, CTR, CPC, CPM, ROMI — the same fields with the same conditions as in the previous task.
+Perform a final selection with the following fields:
+ad_month;
+utm_campaign, total_cost, impressions, clicks, conversion_value, CTR, CPC, CPM, ROMI;
+For each utm_campaign in each month, add a new field: 'Difference between CPM, CTR, and ROMI' in the current month compared to the previous month in percentage.
+*/
+
 WITH CTE_1 
 AS
 ( 

@@ -6,3 +6,4 @@ sum(spend)/sum(clicks) as CPC,
 FROM public.facebook_ads_basic_daily
 where clicks > 0
 group by ad_date, campaign_id
+/* another simple query, making some new metrics grouped by date and campaign id */

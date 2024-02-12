@@ -1,3 +1,11 @@
+/*
+Task Description:
+
+By combining data from four tables, identify the campaign with the highest Return on Marketing Investment (ROMI) among all campaigns with total expenditures exceeding 500,000. 
+Within this campaign, identify the ad set group (adset_name) with the highest ROMI.
+*/
+
+
 WITH a AS (
 SELECT fabd.ad_date, 
 fc.campaign_name,
